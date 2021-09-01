@@ -20,7 +20,7 @@ const Contact = () => {
                         <input type="text" placeholder="How Did You Hear About Me?" name="referral"/>
                     </div>
                     <textarea name="messageContent" placeholder="Additional Information"></textarea>
-                    <button>SEND</button>
+                    <button type="submit">SEND</button>
                 </form>
             </div>
             <div className="cityOutline">

@@ -38,6 +38,7 @@ const About = (props) => {
                         alt="Javascript logo"
                         width="102px"
                         height="102px"
+                        loading="eager"
                     />
                     <h3>JAVASCRIPT</h3>
                     <p>Client-side scripting using Javascript libraries/frameworks such as ReactJS, jQuery, and NextJS.</p>
@@ -48,6 +49,7 @@ const About = (props) => {
                         alt="CMS Settings Cog Logo"
                         width="102px"
                         height="102px"
+                        loading="eager"
                     />
                     <h3>CMS</h3>
                     <p>Expertise in converting designs to WordPress, Craft CMS, and Shopify and developing custom themes.</p>
@@ -59,6 +61,7 @@ const About = (props) => {
                         alt="Front-end development logo"
                         width="102px"
                         height="102px"
+                        loading="eager"
                     />
                     <h3>FRONT END</h3>
                     <p>User-centered front-end development using the latest libraries, frameworks, and design patterns.</p>

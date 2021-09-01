@@ -14,7 +14,8 @@ const Footer = () => {
                     width="53.72px"
                     height="60px"
                     alt="Grey Kevin Allen Logo" 
-                    className="footerLogo"               
+                    className="footerLogo"  
+                    loading="eager"             
                 />
                 <div className="quickNav">
                     <Link href="/">

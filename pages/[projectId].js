@@ -50,6 +50,7 @@ const Project = () => {
                             <Image
                             src={iMac}
                             alt={`Demo video of ${filtered.Name}`}
+                            loading="eager"
                             />
                             <video autoPlay muted loop >         
                                 <source src={filtered.DesktopVideo} type="video/mp4"/>       

@@ -1,13 +1,15 @@
 import City from '../src/img/cityOutline.png'
 import Image from 'next/image'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Contact = () => {
 
     const [submitted, setSubmitted] = useState(false)
 
-    document.querySelector("form").addEventListener("submit", handleSubmit);
+    useEffect(() => {
+        document.querySelector("form").addEventListener("submit", handleSubmit);
+    }, [])
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -45,6 +47,7 @@ const Contact = () => {
                 <Image 
                     src={City}
                     alt="City outline graphic"
+                    loading="eager"
                 />
             </div>
         </div>

@@ -16,6 +16,7 @@ const Header = () => {
                         src={Logo}
                         alt="Blue Kevin Allen Logo"
                         className="headerLogo"
+                        loading="eager"
                     />
                     <h2 className="welcomeTitle">Kevin allen</h2>       
                     <hr />
@@ -28,6 +29,7 @@ const Header = () => {
                     width="20px"
                     height="11.72px"
                     alt="White down chevron"
+                    loading="eager"
                 />
             </div>
     

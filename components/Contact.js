@@ -3,6 +3,22 @@ import Image from 'next/image'
 
 const Contact = () => {
 
+    const [submitted, setSubmitted] = useState(false)
+
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        let myForm = document.getElementById('contact-me');
+        let formData = new FormData(myForm)
+        fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+        }).then(() => console.log('Form successfully submitted')).catch((error) =>
+            alert(error))
+    }
+
 
     return (
         <div id="contact-me" className="contactForm homepageSection">

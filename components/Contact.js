@@ -1,6 +1,8 @@
 import City from '../src/img/cityOutline.png'
 import Image from 'next/image'
 
+import { useState } from 'react'
+
 const Contact = () => {
 
     const [submitted, setSubmitted] = useState(false)

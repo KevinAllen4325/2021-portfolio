@@ -1,0 +1,142 @@
+@media screen and (max-width: 956px){
+    .recentWork{
+        .workNav{
+            flex-wrap:wrap;
+            .navItem{
+                margin: 5px 10px;
+            }
+        }
+        .workGrid{
+            text-align:center;
+            width: 100%;
+            .workItem{
+                width: 100%!important;
+                margin: 10px 5px;
+                .overlay{
+                    h4{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .aboutMe{
+        .aboutGrid{
+            flex-direction: column;
+            .gridItem{
+                margin: 10px 5px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #navigation{
+        nav{
+            .navItems{
+                a{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    .recentWork{
+        .workNav{
+            flex-wrap:wrap;
+            .navItem{
+                margin: 10px 15px;
+            }
+        }
+    }
+
+    .homepageSection {
+        padding: 60px 0;
+    }
+
+    header.homepageHeader{
+        .overlay{
+            .welcomeInfo{
+                h2.welcomeTitle{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                div{
+                    img{
+                        width: 85px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .contactForm{
+        form.contact{
+            div{
+                display:block;
+                margin: 0!important;
+                width: 100%;
+                input{
+                    padding: 12px;
+                    margin-bottom: 15px;
+                }
+            }
+            textarea{
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+            button{
+                width: 100%;
+                height: 60px;
+            }
+        }
+        .cityOutline{
+            display: flex;
+            align-items: flex-end;
+            opacity: .06;
+        }
+    }
+
+    // Work Pages
+    .projects{
+        .projectItem{
+            .projectOverview{
+                text-align:center;
+                padding: 60px 0;
+                p{
+                    width: 100%;
+                }
+                a{
+                    display:block;
+                    margin: 25px auto;
+                    width: 100%;
+                    height: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    &:last-of-type{
+                        margin: 0 
+                    }
+                }
+            }
+            .projectDemo{
+                padding: 75px 0;
+                .topAngle{
+                    transform: rotate(
+                        2deg
+                    );
+                    top:-140px;
+                }
+                .bottomAngle{
+                    bottom: -140px;
+                }
+            }
+        }
+    }
+}

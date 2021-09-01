@@ -1,0 +1,119 @@
+header.homepageHeader{
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    background-image: url(../src/img/headerBackground2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position:relative;
+
+    .overlay{
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(23,23,23,0) 75%);
+        .welcomeInfo{
+            position: relative;
+            @include flex;
+            flex-direction: column;
+            height: 100%;
+            h2.welcomeTitle{
+                font-size: 60px;
+                color:$offWhite;
+                line-height: 1.2;
+                font-weight: normal;
+                letter-spacing: 6px;
+                margin: 30px 0 0;
+                letter-spacing: 6px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            hr{
+                color: $offWhite;
+                margin-top: 30px;
+                margin-bottom: 0;
+                background-color: $offWhite;
+                height: 1px;
+                width: 106px;
+                border: 0;
+            }
+            p{
+                color: $offWhite;
+                letter-spacing: .04em;
+                font-size: 24px;
+                line-height: 1.4;
+                font-weight: 300;
+                margin-top: 30px;
+            }
+            
+        }
+    }
+    .downChevron{
+        position: absolute;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        cursor: pointer;
+        left:0;
+        right:0;
+        margin: 0 auto;
+        text-align:center;
+        -webkit-animation: bounce-fade 1.2s infinite;
+        -moz-animation: bounce-fade 1.2s infinite;
+        -o-animation: bounce-fade 1.2s infinite;
+        animation: bounce-fade 1.2s infinite;
+    }
+    .cityOuyline{
+        width: 100%;
+        position: absolute;
+        left:0;
+        bottom: 0;
+        overflow-x:hidden;
+        img{
+            opacity: .03
+        }
+    }
+}
+
+@-webkit-keyframes bounce-fade{
+    0%{
+        opacity:0;
+        bottom:70px
+    }
+    100%{
+        opacity:1;
+        bottom: 35px;
+    }
+}
+@-moz-keyframes bounce-fade{
+    0%{
+        opacity:0;
+        bottom: 70px
+    }
+    100%{
+        opacity:1;
+        bottom: 35px;
+    }
+}
+@-o-keyframes bounce-fade{
+    0%{
+        opacity:0;
+        bottom: 70px
+    }
+    100%{
+        opacity:1;
+        bottom: 35px;
+    }
+}
+@keyframes bounce-fade{
+    0%{
+        opacity:0;
+        bottom:70px
+    }
+    100%{
+        opacity:1;
+        bottom:35px
+    }
+}

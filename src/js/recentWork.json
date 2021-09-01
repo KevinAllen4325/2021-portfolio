@@ -1,0 +1,50 @@
+[
+    {
+        "Name": "Matsui America",
+        "Slug": "matsui-america",
+        "HomePhoto": "/img/Matsui.jpg",
+        "ShortDescription": "Custom Theme Development",
+        "Tags": [ "CMS", "All"],
+        "Overview": "Matsui America is an innovative company that specializes in next generation technologies that enhance injection molding performance. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
+        "DesktopVideo": "/videos/MatsuiDesktop.mp4",
+        "Key": 1,
+        "Github": "",
+        "Website": "https://www.matsuiamerica.com"
+    },
+    {
+        "Name": "JL Services",
+        "Slug": "jl-services",
+        "HomePhoto": "/img/jj.jpg",
+        "ShortDescription": "Custom Theme Development",
+        "Tags": [ "CMS", "All"],
+        "Overview": "JL Services is a power washing company in the Chicagoland area that offers the safest way to clean your homes exterior. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
+        "DesktopVideo": "/videos/jjDesktop.mp4",
+        "Key": 2,
+        "Github": "",
+        "Website": "https://www.jlservicesgroup.com"
+    },
+    {
+        "Name": "Kevinallen.io",
+        "Slug": "portfolio-site",
+        "HomePhoto": "/img/KevinAllen.jpg",
+        "ShortDescription": "ReactJS · NextJS",
+        "Tags": [ "React", "All"],
+        "Overview": "In the past I've always used various CMS's to build my personal website. This time around I chose React and Nextjs. React is possibly my favorite Javascript framework and I really enjoy working with it. I chose to pair it with NextJS due to it's ability to render content on the server, which is beneficial for SEO, as well as all of the little optimization/performance tweaks it provides. ",
+        "DesktopVideo": "/videos/2021-portfolio.mp4",
+        "Key": 4,
+        "Github": "https://github.com/KevinAllen4325/2021-portfolio",
+        "Website": "https://kevinallen.io"
+    },
+    {
+        "Name": "Netflix App",
+        "Slug": "netflix-app",
+        "HomePhoto": "/img/NetflixApp.jpg",
+        "ShortDescription": "ReactJS · JSX",
+        "Tags": [ "React", "All"],
+        "Overview": "Back in 2017-2018 I set out to learn React. This \"Netflix Clone\" was my first project. Today, Netflix looks drastically different, but I keep this up more for myself. It was the first project I had completed in React and I was quite proud of it. I created this with vanilla React using class-based components and React Router. I'm sure there's an animation library tossed in there too.",
+        "DesktopVideo": "/videos/NetflixDesktop.mp4",
+        "Key": 3,
+        "Github": "https://github.com/KevinAllen4325/netflix-react",
+        "Website": "https://kevinallen4325.github.io/netflix-react/"
+    }
+]

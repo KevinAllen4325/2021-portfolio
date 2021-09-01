@@ -1,0 +1,91 @@
+.contactForm{
+    position:relative;
+    hr{
+        margin-bottom: 35px;
+    }
+    form.contact{
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+        div{
+            width: calc(50% - 6px);
+            display: inline-block;
+            text-align: left;
+            input{
+                width: 100%;
+                border: none;
+                padding: 8px 10px;
+                background: #f8f8f8;
+                margin-bottom: 12px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                &:focus{
+                    background:#fbfbfb;
+                }
+            }
+            input[name="companyName"]{
+                display:none;
+            }
+        }
+        textarea{
+            display: block;
+            width: 100%;
+            padding: 8px 12px;
+            height: 150px;
+            resize: none;
+            background: #f8f8f8;
+            border: none;
+            margin: 0 auto 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            &:focus{
+                background:#fbfbfb;
+            }
+        }
+        .formLeft{
+            margin-right: 6px;
+        }
+        .formRight{
+            margin-left: 6px;
+        }
+        button{
+            display:block;
+            position: relative;
+            width: 200px;
+            height: 45px;
+            margin: 0 auto;
+            border: 1px solid #333;
+            text-transform: uppercase;
+            text-align: center;
+            color: #333;
+            cursor: pointer;
+            font-size: 14px;
+            background: none;
+            @include transition(all, .03s);
+            transition: all 0.3s ease-in;
+            letter-spacing: 1px;
+            &:hover{
+                background-color: $black;
+                color:white;
+            }
+        }
+    }
+    .cityOutline{
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        left: 0;
+        z-index: -1;
+        height: 45%;
+        max-width: 1600px;
+        width: 100%;
+        opacity: 0.03;
+        margin: 0 auto;
+        div{
+            width: 100%;
+            img{
+                width: 100%
+            }
+        }
+    }
+}

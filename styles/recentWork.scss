@@ -1,0 +1,83 @@
+.recentWork{
+    background: $lightGrey;
+    min-height: 977px;
+
+    .workNav{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        p{
+            user-select: none;
+            padding: 8px 20px;
+            margin: 0 3px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border-radius: 25px;
+            @include transition(all, .2s);
+            &:hover{
+                background: $blue;
+                color:white; 
+            }
+        }
+        p.active{
+            background: $blue;
+            color:white;
+        }
+    }
+
+    .workGrid{
+        @include transition(all, 5s);
+        .workItem{
+            position: relative;
+            width: 430px;
+            height: 285px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            display: inline-block;
+            vertical-align: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            @include transition(all, .2s);
+            &:hover{
+                transform: scale(1.03);
+            }
+            .overlay{
+                position:absolute;
+                bottom:0;
+                width: 100%;
+                padding: 20px 0;
+                background-color:rgba(17, 17, 17, 0.8);
+                text-align:center;
+                
+                h4{
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    letter-spacing: 6px;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                p{
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    text-align: center;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #58A4B0;
+                    letter-spacing: 6px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+

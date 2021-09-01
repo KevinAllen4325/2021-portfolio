@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="container">
                 <h2>Let&apos;s Work Together</h2>
                 <hr />
-                <form action="post" className="contact">
+                <form action="POST" className="contact" data-netlify="true" netlify-honeypot="companyName">
                     <div className="formLeft">
                         <input type="text" placeholder="Name" name="fromName" required/>
                         <input type="email" placeholder="Email" name="fromEmail" required />

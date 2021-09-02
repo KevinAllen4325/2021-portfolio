@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import Error from 'next/error'
+import Error from '../pages/404'
 
 import Footer from '../components/Footer'
 import Nav from '../components/Navigation'
@@ -68,7 +68,7 @@ const Project = () => {
     }
 
     if(!whiteList.includes(projectId))
-        return <Error statusCode={404}/>
+        return <Error />
         
 }
 

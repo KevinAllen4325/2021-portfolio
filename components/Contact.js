@@ -1,16 +1,17 @@
 import City from '../src/img/cityOutline.png'
 import Image from 'next/image'
-
-import { useState, useEffect } from 'react'
+import {useState} from 'react'
 
 const Contact = () => {
+
+    
 
     return (
         <div id="contact-me" className="contactForm homepageSection">
             <div className="container">
                 <h2>Let&apos;s Work Together</h2>
                 <hr />
-                <form action="POST" className="contact" data-netlify="true" netlify-honeypot="companyName">
+                <form method="POST"  className="contact" data-netlify="true" netlify-honeypot="companyName">
                     <div className="formLeft">
                         <input type="text" placeholder="Name" name="fromName" required/>
                         <input type="email" placeholder="Email" name="fromEmail" required />

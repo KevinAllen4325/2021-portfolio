@@ -42,11 +42,11 @@ const Navigation = (props) => {
                     display: display
                 }} 
             >
-                <div className="navItems">
+                <div className="navItems" onClick={toggle}>
                     <Link className="navItem" href="/">Home</Link>
-                    <Link className="navItem" href="/#about"><a onClick={toggle}>About</a></Link>
-                    <Link className="navItem"  href="/#work"><a onClick={toggle}>Work</a></Link>
-                    <Link className="navItem"  href="/#contact-me"><a onClick={toggle}>Contact</a></Link>
+                    <Link className="navItem" href="/#about">About</Link>
+                    <Link className="navItem"  href="/#work">Work</Link>
+                    <Link className="navItem"  href="/#contact-me">Contact</Link>
                 </div>
             </nav>
         </div>

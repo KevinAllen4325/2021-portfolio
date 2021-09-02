@@ -140,3 +140,21 @@
         }
     }
 }
+
+@media screen and (max-width: 450px){
+    .thankYouPage, .customErrorPage{
+        .container{
+            flex-direction: column;
+            h1{
+                border-right: none;
+                margin: 0;
+                padding: 10px 0;;
+                font-size: 20px;
+            }
+            h2{
+                line-height: 2;
+                font-size: 13px;
+            }
+        }
+    }
+}

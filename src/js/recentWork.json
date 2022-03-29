@@ -1,50 +1,122 @@
 [
     {
+        "Name": "Digital Huddle",
+        "Slug": "digital-huddle",
+        "HomePhoto": "/img/DH-small.webp",
+        "HomePhotoLarge": "/img/DH-large.webp",
+        "pageSpeedPhotos": "", 
+        "ShortDescription": "WordPress · Theme Development",
+        "Tags": [ "WordPress", "All"],
+        "Overview": "Digital Huddle is a tech publisher that prides themselves on providing traditional methods and best practices for all things digital marketing. DH is running a custom wordpress theme built using Advanced Custom Fields (ACF), PHP, javascript, and hosted on WPEngine and routed through Cloudflare",
+        "DesktopVideo": "/videos/DHDesktop.mp4",
+        "Key": 0,
+        "Github": "",
+        "Website": "https://digitalhuddle.com/"
+    },
+    {
+        "Name": "Poppies Dough",
+        "Slug": "poppies-dough",
+        "HomePhoto": "/img/poppies-small.webp",
+        "HomePhotoLarge": "/img/poppies-large.webp",
+        "pageSpeedPhotos": "", 
+        "ShortDescription": "Shopify · Theme Development",
+        "Tags": [ "Shopify", "All"],
+        "Overview": "Poppies Dough is a Chicagoland Retail/Wholesale/Delicous bakery. I've been contracted for on-going maintenance and redesigning aspects of the live theme, as well as working on a custom theme with a full redesign using Dawn 2.0 to ensure compliancy with newer shopify standards. Shopify uses CSS (SCSS on older themes), Liquid, HTML, and Javascript.",
+        "DesktopVideo": "/videos/PoppiesDesktop.mp4",
+        "Key": 1,
+        "Github": "",
+        "Website": "https://www.poppiesdough.com"
+    },
+    {
+        "Name": "Kingsley LLC",
+        "Slug": "kingsley-llc",
+        "HomePhoto": "/img/kingsley-small.webp",
+        "HomePhotoLarge": "/img/Kingsley-large.webp",
+        "pageSpeedPhotos": [ 
+            {
+                "src": "/img/kingsley/Kingsley_Pagespeed_Score.webp",
+                "key": 1,
+                "alt": "Kingsley's Google page speed score"
+            }, 
+            {
+                "src": "/img/kingsley/Kingsley_Lighthouse_Score.webp",
+                "key": 2,
+                "alt": "Kingsley's Google Lighthouse score"
+            }, 
+            {
+                "src": "/img/kingsley/Kingsley_GTMetrix_Score.webp",
+                "key": 3 ,
+                "alt": "Kingsley's GTMetrix score"           
+            }, 
+            {
+                "src": "/img/kingsley/Kingsley_KeyCDN_Score.webp",
+                "key": 4,
+                "alt": "Kingsley's KeyCDN score"
+            }
+        ], 
+        "ShortDescription": "WordPress · Theme Development",
+        "Tags": [ "WordPress", "All"],
+        "Overview": "Kingsley LLC is a water damage and mold remediation company. We created this website using Wordpress, Advanced Custom Fields (ACF), Twig (via Timber), PHP, and Javascript. When Mike contacted me for a new website, he let me know that optimization and website speed was the most important thing to him. As of the publish date, kingsleyllc.com was receiving a 93 performance rating on Google Page Speed, 98 with Lighthouse, and a 100% on GTMetrix.",
+        "DesktopVideo": "/videos/KingsleyDesktop.mp4",
+        "Key": 2,
+        "Github": "https://github.com/KevinAllen4325/kingsley-llc",
+        "Website": "https://www.kingsleyllc.com"
+    },
+    {
         "Name": "Matsui America",
         "Slug": "matsui-america",
-        "HomePhoto": "/img/Matsui.jpg",
-        "ShortDescription": "Custom Theme Development",
-        "Tags": [ "CMS", "All"],
-        "Overview": "Matsui America is an innovative company that specializes in next generation technologies that enhance injection molding performance. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
+        "HomePhoto": "/img/Matsui.webp",
+        "HomePhotoLarge": "/img/matsui-large.webp",
+        "pageSpeedPhotos": "",
+        "ShortDescription": "WordPress · Theme Development",
+        "Tags": [ "WordPress", "All"],
+        "Overview": "Matsui America is an innovative company that specializes in next generation technologies that enhance injection molding performance. To build this website, I was provided a Photoshop Design and created the website using WordPress, PHP, Javascript, jQuery, and SASS",
         "DesktopVideo": "/videos/MatsuiDesktop.mp4",
-        "Key": 1,
+        "Key": 3,
         "Github": "",
         "Website": "https://www.matsuiamerica.com"
     },
     {
         "Name": "JL Services",
         "Slug": "jl-services",
-        "HomePhoto": "/img/jj.jpg",
-        "ShortDescription": "Custom Theme Development",
-        "Tags": [ "CMS", "All"],
+        "HomePhoto": "/img/jl-small.webp",
+        "HomePhotoLarge": "/img/jl-large.webp",
+        "pageSpeedPhotos": "",
+        "ShortDescription": "Craft CMS · Theme Development",
+        "Tags": [ "Craft", "All"],
         "Overview": "JL Services is a power washing company in the Chicagoland area that offers the safest way to clean your homes exterior. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
         "DesktopVideo": "/videos/jjDesktop.mp4",
-        "Key": 2,
+        "Key": 4,
         "Github": "",
         "Website": "https://www.jlservicesgroup.com"
     },
     {
         "Name": "Kevinallen.io",
         "Slug": "portfolio-site",
-        "HomePhoto": "/img/KevinAllen.jpg",
+        "HomePhoto": "/img/Kevinallen-small.webp",
+        "HomePhotoLarge": "/img/Kevinallen-large.webp",
+        "pageSpeedPhotos": "",
         "ShortDescription": "ReactJS · NextJS",
         "Tags": [ "React", "All"],
         "Overview": "In the past I've always used various CMS's to build my personal website. This time around I chose React and Nextjs. React is possibly my favorite Javascript framework and I really enjoy working with it. I chose to pair it with NextJS due to it's ability to render content on the server, which is beneficial for SEO, as well as all of the little optimization/performance tweaks it provides. ",
         "DesktopVideo": "/videos/2021-portfolio.mp4",
-        "Key": 4,
+        "Key": 5,
         "Github": "https://github.com/KevinAllen4325/2021-portfolio",
         "Website": "https://kevinallen.io"
     },
     {
         "Name": "Netflix App",
         "Slug": "netflix-app",
-        "HomePhoto": "/img/NetflixApp.jpg",
+        "HomePhoto": "/img/netflix-small.webp",
+        "HomePhotoLarge": "/img/netflix-large.webp",
+        "pageSpeedPhotos": "",
         "ShortDescription": "ReactJS · JSX",
         "Tags": [ "React", "All"],
         "Overview": "Back in 2017-2018 I set out to learn React. This \"Netflix Clone\" was my first project. Today, Netflix looks drastically different, but I keep this up more for myself. It was the first project I had completed in React and I was quite proud of it. I created this with vanilla React using class-based components and React Router. I'm sure there's an animation library tossed in there too.",
         "DesktopVideo": "/videos/NetflixDesktop.mp4",
-        "Key": 3,
+        "Key": 6,
         "Github": "https://github.com/KevinAllen4325/netflix-react",
         "Website": "https://kevinallen4325.github.io/netflix-react/"
     }
+    
 ]

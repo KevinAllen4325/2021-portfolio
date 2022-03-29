@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import JsLogo from '../src/img/js.png'
-import CmsLogo from '../src/img/GearCog.png'
-import FrontEnd from '../src/img/Pencils.png'
+import JsLogo from '../src/img/js.webp'
+import CmsLogo from '../src/img/GearCog.webp'
+import FrontEnd from '../src/img/Pencils.webp'
 
 import { useEffect, useRef } from 'react'
 
@@ -30,7 +30,7 @@ const About = (props) => {
             <div className="container">
                 <h2>About Me</h2>
                 <hr />
-                <p>Hey! I&apos;m a web developer in the northwest suburbs of Chicago, IL. I specialize in ReactJS and other Javascript-based frameworks. I also have extensive experience in Content Management Systems such as Craft CMS, WordPress, Shopify, Squarespace, Wix, Duda, and more. I&apos;m available to help you build the website/application of your dreams or help you fix various technical issues you may be experiencing.</p>
+                <p>Hey! I&apos;m a web developer in the northwest suburbs of Chicago, IL. I specialize in ReactJS and other Javascript-based frameworks. I also have extensive experience in Content Management Systems such as Craft CMS, WordPress, Shopify, and more. I&apos;m available to help you build the website/application of your dreams or help you fix various technical issues you may be experiencing.</p>
                 <div className="aboutGrid">
                 <div className="javascript gridItem">
                     <Image
@@ -41,7 +41,7 @@ const About = (props) => {
                         loading="eager"
                     />
                     <h3>JAVASCRIPT</h3>
-                    <p>Client-side scripting using Javascript libraries/frameworks such as ReactJS, jQuery, and NextJS.</p>
+                    <p>Client-side scripting using Javascript libraries/frameworks such as ReactJS, NextJS, jQuery, and NodeJS.</p>
                 </div>
                 <div className="frontEnd gridItem">
                 <Image
@@ -52,7 +52,7 @@ const About = (props) => {
                         loading="eager"
                     />
                     <h3>CMS</h3>
-                    <p>Expertise in converting designs to WordPress, Craft CMS, and Shopify and developing custom themes.</p>
+                    <p>Expertise in converting designs to WordPress, Craft CMS, Shopify, and developing custom themes.</p>
 
                 </div>
                 <div className="cms gridItem">

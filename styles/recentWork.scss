@@ -32,7 +32,7 @@
         @include transition(all, 5s);
         .workItem{
             position: relative;
-            width: 430px;
+            width: 440px;
             height: 285px;
             background-size: cover;
             background-position: center;
@@ -43,7 +43,7 @@
             background-repeat: no-repeat;
             background-position: center;
             cursor: pointer;
-            @include transition(all, .2s);
+            @include transition(transform, .1s);
             &:hover{
                 transform: scale(1.03);
             }
@@ -77,6 +77,10 @@
                     position: relative;
                 }
             }
+            
+        }
+        .largeImage{
+            width: calc(100% - 10px);
         }
     }
 }

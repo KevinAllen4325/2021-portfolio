@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import greyLogo from '../src/img/logo-footer2.png'
+import greyLogo from '../src/img/logo-footer2.webp'
 import Link from 'next/link'
 
 const Footer = () => {

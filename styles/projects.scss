@@ -84,6 +84,24 @@
                 transform: rotate(
             -1deg);
             }
+            .pageSpeedGrid{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 50px;
+                
+                .gridItem{
+                    margin: 4px;
+                    border: 1px solid #e2dfdf;
+                    img{
+                        @media screen and (max-width: 976px){
+                            width: 100%!important;
+                            height: auto!important;
+                        }
+                    }
+                }
+            
+            }
         }
     }
 }

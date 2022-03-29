@@ -1,4 +1,4 @@
-import City from '../src/img/cityOutline.png'
+import City from '../src/img/cityOutline.webp'
 import Image from 'next/image'
 import {useState} from 'react'
 

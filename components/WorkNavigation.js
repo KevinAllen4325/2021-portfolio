@@ -11,21 +11,26 @@ const WorkNavigation = (props) => {
             setFilter("All")
             props.setWorkItem("All")
         }}>All</p>
-            <p className={`navItem ${filter === "CMS" ? "active" : ""}`} 
+            <p className={`navItem ${filter === "Craft" ? "active" : ""}`} 
             onClick={() => {
-            setFilter("CMS")
-            props.setWorkItem("CMS")
-        }}>CMS</p>
-            <p className={`navItem ${filter === "React" ? "active" : ""}`} 
+            setFilter("Craft")
+            props.setWorkItem("Craft")
+        }}>Craft</p>
+            <p className={`navItem ${filter === "WordPress" ? "active" : ""}`} 
             onClick={() => {
-            setFilter("React")
-            props.setWorkItem("React")
+            setFilter("WordPress")
+            props.setWorkItem("WordPress")
+        }}>WordPress</p>
+        <p className={`navItem ${filter === "Shopify" ? "active" : ""}`} 
+            onClick={() => {
+            setFilter("Shopify")
+            props.setWorkItem("Shopify")
+        }}>Shopify</p>
+        <p className={`navItem ${filter === "React" ? "active" : ""}`} 
+        onClick={() => {
+        setFilter("React")
+        props.setWorkItem("React")
         }}>React</p>
-            {/* <p className={`navItem ${filter === "NodeJS" ? "active" : ""}`} 
-            onClick={() => {
-            setFilter("NodeJS")
-            props.setWorkItem("NodeJS")
-        }}>NodeJS</p> */}
         </div>
     )
 }

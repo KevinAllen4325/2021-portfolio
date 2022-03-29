@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Logo from '../src/img/LogoBlue2.png'
-import Chevron from '../src/img/down-chevron.png'
+import Logo from '../src/img/LogoBlue2.webp'
+import Chevron from '../src/img/down-chevron.webp'
 
 const Header = () => {
 
@@ -17,6 +17,8 @@ const Header = () => {
                         alt="Blue Kevin Allen Logo"
                         className="headerLogo"
                         loading="eager"
+                        width="103px"
+                        height="114px"
                     />
                     <h2 className="welcomeTitle">Kevin allen</h2>       
                     <hr />

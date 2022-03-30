@@ -40,7 +40,7 @@ const Project = () => {
                                 </div>
                             </div>
                         </div>
-                        
+                    
                         <div className="projectDemo">
                             <div className="topAngle"></div>
                             <div className="container">
@@ -51,7 +51,7 @@ const Project = () => {
                                 loading="eager"
                                 onClick
                             />
-                            <video autoPlay muted loop >         
+                            <video autoPlay muted loop poster={filtered.Poster} >         
                                 <source src={filtered.DesktopVideo} type="video/mp4"/>       
                             </video>
                             </div>

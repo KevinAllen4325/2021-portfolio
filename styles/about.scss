@@ -19,6 +19,19 @@
             width: 260px;
             text-align:center;
             vertical-align: top;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                width: 102px;
+                img {
+                    object-fit: contain;
+                }
+            }
+            h3 {
+                line-height: 1;
+            }
             
             p{
                 font-size: 15px;

@@ -6,31 +6,30 @@ import FrontEnd from '../src/img/Pencils.webp'
 import { useEffect, useRef } from 'react'
 
 
-const About = (props) => {
-
+const About = ({ setDarkMode }) => {
     const inputRef = useRef();
 
     useEffect(() => {
+        const scrollHandler = () => {
+            let top = inputRef.current.getBoundingClientRect().top;
+            if (top <= 15)
+                setDarkMode(true);
+            else
+                setDarkMode(false);
+        };
+
         window.addEventListener("scroll", scrollHandler, true);
         return () => {
             window.removeEventListener("scroll", scrollHandler, true);
         };
-    }, []);
-
-    const scrollHandler = _ => {
-        let top = inputRef.current.getBoundingClientRect().top
-        if (top <= 15)
-            props.setDarkMode(true)
-        else
-            props.setDarkMode(false)
-    }
+    }, [setDarkMode]);
 
     return (
-        <div ref={inputRef} id="about" className="aboutMe homepageSection" >
+        <div ref={inputRef} id="about" className="aboutMe homepageSection">
             <div className="container">
                 <h2>About Me</h2>
                 <hr />
-                <p>Experienced developer with a keen focus on automation and solution architecture, specializing in custom theme development for WordPress,Shopify, and Craft CMS. Proficient in a wide array of frontend and backend technologies, including HTML, CSS, JavaScript, React, PHP, andNode.js. Skilled in Agile methodologies, project management, and fostering strong client relationships. Committed to continuous improvement, staying updated on industry trends, and delivering impactful solutions that surpass expectations.</p>
+                <p>Experienced developer with a keen focus on automation and solution architecture, specializing in custom theme development for WordPress, Shopify, and Craft CMS. Proficient in a wide array of frontend and backend technologies, including HTML, CSS, JavaScript, React, PHP, and Node.js. Skilled in Agile methodologies, project management, and fostering strong client relationships. Committed to continuous improvement, staying updated on industry trends, and delivering impactful solutions that surpass expectations.</p>
                 <div className="aboutGrid">
                     <div className="javascript gridItem">
                         <Image

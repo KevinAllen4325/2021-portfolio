@@ -1,30 +1,34 @@
-import { useState } from 'react'
-import Link from 'next/link'
-
+import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const Navigation = (props) => {
+    const [showNav, setShowNav] = useState(false);
+    const [display, setDisplay] = useState("none");
+    const [opacity, setOpacity] = useState(0);
+    const timeoutIdRef = useRef(null); // Initialize as null
 
-    const [showNav, setShowNav] = useState(false)
-    const [display, setDisplay] = useState("none")
-    const [opacity, setOpacity] = useState(0)
-
-    //Toggle menu and icon change
     const toggle = () => {
         if (display === "none") {
-            setDisplay("block")
-            setShowNav(true)
-            setTimeout(() => {
-                setOpacity(1)
+            setDisplay("block");
+            setShowNav(true);
+            timeoutIdRef.current = setTimeout(() => {
+                setOpacity(1);
             }, 0);
         }
         if (display === "block") {
-            setOpacity(0)
-            setShowNav(false)
-            setTimeout(() => {
-                setDisplay("none")
-            }, 250)
+            setOpacity(0);
+            setShowNav(false);
+            timeoutIdRef.current = setTimeout(() => {
+                setDisplay("none");
+            }, 250);
         }
-    }
+    };
+
+    useEffect(() => {
+        return () => {
+            clearTimeout(timeoutIdRef.current); // Use timeoutIdRef.current
+        };
+    }, []); // No dependencies so it only runs once
 
     return (
         <div id="navigation" className={props.darkMode === true ? "darkMode" : ""}>
@@ -48,11 +52,11 @@ const Navigation = (props) => {
                     <Link className="navItem" href="/#about">About</Link>
                     <Link className="navItem" href="/#work">Work</Link>
                     <Link className="navItem" href="/#contact-me">Contact</Link>
-                    <a href="/pdf/KevinOneillResume.pdf" target="_blank">Resume</a>
+                    <Link href="/pdf/KevinOneillResume.pdf" rel="noopener noreferrer" target="_blank">Resume</Link>
                 </div>
             </nav>
         </div>
-    )
-}
+    );
+};
 
-export default Navigation
+export default Navigation;

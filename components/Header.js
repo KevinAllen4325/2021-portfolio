@@ -20,13 +20,13 @@ const Header = () => {
                         width="103px"
                         height="114px"
                     />
-                    <h2 className="welcomeTitle">Kevin allen</h2>       
+                    <h2 className="welcomeTitle">Kevin allen</h2>
                     <hr />
                     <p>Chicagoland Web Developer</p>
                 </div>
             </div>
             <div className="downChevron" onClick={handleImageClick}>
-                <Image 
+                <Image
                     src={Chevron}
                     width="20px"
                     height="11.72px"
@@ -34,7 +34,7 @@ const Header = () => {
                     loading="eager"
                 />
             </div>
-    
+
         </header>
     )
 }

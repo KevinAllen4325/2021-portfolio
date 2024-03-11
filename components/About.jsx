@@ -11,11 +11,13 @@ const About = ({ setDarkMode }) => {
 
     useEffect(() => {
         const scrollHandler = () => {
-            let top = inputRef.current.getBoundingClientRect().top;
-            if (top <= 15)
-                setDarkMode(true);
-            else
-                setDarkMode(false);
+            if (inputRef.current) { // Check if inputRef.current is not null
+                let top = inputRef.current.getBoundingClientRect().top;
+                if (top <= 15)
+                    setDarkMode(true);
+                else
+                    setDarkMode(false);
+            }
         };
 
         window.addEventListener("scroll", scrollHandler, true);

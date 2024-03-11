@@ -64,6 +64,10 @@ header.homepageHeader{
         -moz-animation: bounce-fade 1.2s infinite;
         -o-animation: bounce-fade 1.2s infinite;
         animation: bounce-fade 1.2s infinite;
+        img {
+            width: 20px;
+            height: 11px;
+        }
     }
     .cityOuyline{
         width: 100%;

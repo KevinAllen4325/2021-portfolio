@@ -9,6 +9,11 @@ const RecentWork = () => {
     const [workItem, setWorkItem] = useState("All");
     const [isMobile, setIsMobile] = useState(false);
 
+    const divCount = () => {
+        const workItemCount = workStuff.filter(tag => tag.Tags.includes(workItem)).length;
+        setFullWidth(workItemCount % 2 === 0 ? "largeImage" : "smallImage");
+    }
+
     useEffect(() => {
         divCount();
         isItMobile();
@@ -17,11 +22,6 @@ const RecentWork = () => {
             window.removeEventListener("resize", isItMobile);
         };
     }, [divCount]); // Include divCount in the dependency array
-
-    const divCount = () => {
-        const workItemCount = workStuff.filter(tag => tag.Tags.includes(workItem)).length;
-        setFullWidth(workItemCount % 2 === 0 ? "largeImage" : "smallImage");
-    }
 
     const isItMobile = () => {
         if (window.innerWidth <= 957 && window.innerWidth > 500) {

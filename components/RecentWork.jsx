@@ -21,15 +21,16 @@ const RecentWork = () => {
 
     useEffect(() => {
         updateLayout();
-        window.addEventListener("resize", updateLayout);
+        const handleResize = () => updateLayout();
+        window.addEventListener("resize", handleResize);
         return () => {
-            window.removeEventListener("resize", updateLayout);
+            window.removeEventListener("resize", handleResize);
         };
     }, [updateLayout]);
 
-    const handleNavClick = () => {
-        setFullWidth("smallImage"); // Resetting fullWidth on nav click
-    };
+    const handleNavClick = useCallback(() => {
+        setFullWidth("smallImage");
+    }, []);
 
     return (
         <div id="work" className="recentWork homepageSection">

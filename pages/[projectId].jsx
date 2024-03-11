@@ -20,7 +20,9 @@ const Project = () => {
         return <Error />;
     }
 
-    const project = memoizedProjectsData.find(project => project.Slug.includes(projectId));
+    const project = useMemo(() => {
+        return memoizedProjectsData.find(p => p.Slug.includes(projectId));
+    }, [memoizedProjectsData, projectId]);
 
     if (!project) {
         return <Error />;

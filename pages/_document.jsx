@@ -5,10 +5,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-117107118-1"
-          />
+          /> */}
 
           <script
             dangerouslySetInnerHTML={{

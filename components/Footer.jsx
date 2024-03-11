@@ -9,27 +9,27 @@ const Footer = () => {
     return (
         <footer>
             <div className="container">
-                <Image 
+                <Image
                     src={greyLogo}
                     width="53.72px"
                     height="60px"
-                    alt="Grey Kevin Allen Logo" 
-                    className="footerLogo"  
-                    loading="eager"             
+                    alt="Grey Kevin Allen Logo"
+                    className="footerLogo"
+                    loading="eager"
                 />
                 <div className="quickNav">
                     <Link href="/">
                         Home
                     </Link>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kevinallen3/">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevinallen3/">
                         LinkedIn
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/KevinAllen4325">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/KevinAllen4325">
                         Github
                     </a>
                 </div>
                 <p className="copyright">
-                © {year}. All Rights Reserved Kevinallen.io
+                    © {year}. All Rights Reserved Kevinallen.io
                 </p>
             </div>
         </footer>

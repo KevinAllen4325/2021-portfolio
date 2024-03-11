@@ -1,5 +1,5 @@
 import Nav from './WorkNavigation';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 
 const workStuff = require('../src/js/recentWork.json');
@@ -9,32 +9,26 @@ const RecentWork = () => {
     const [workItem, setWorkItem] = useState("All");
     const [isMobile, setIsMobile] = useState(false);
 
-    const divCount = () => {
-        const workItemCount = workStuff.filter(tag => tag.Tags.includes(workItem)).length;
-        setFullWidth(workItemCount % 2 === 0 ? "largeImage" : "smallImage");
-    }
+    const filterWorkItems = useCallback(() => {
+        return workStuff.filter(tag => tag.Tags.includes(workItem));
+    }, [workItem]);
+
+    const updateLayout = useCallback(() => {
+        const windowWidth = window.innerWidth;
+        setIsMobile(windowWidth <= 500);
+        setFullWidth(windowWidth <= 957 ? "largeImage" : "smallImage");
+    }, []);
 
     useEffect(() => {
-        divCount();
-        isItMobile();
-        // Cleanup function to remove event listener
+        updateLayout();
+        window.addEventListener("resize", updateLayout);
         return () => {
-            window.removeEventListener("resize", isItMobile);
+            window.removeEventListener("resize", updateLayout);
         };
-    }, [divCount]); // Include divCount in the dependency array
-
-    const isItMobile = () => {
-        if (window.innerWidth <= 957 && window.innerWidth > 500) {
-            setIsMobile(false);
-            setFullWidth("largeImage");
-        } else if (window.innerWidth <= 500) {
-            setIsMobile(true);
-            setFullWidth("smallImage");
-        }
-    }
+    }, [updateLayout]);
 
     const handleNavClick = () => {
-        divCount();
+        setFullWidth("smallImage"); // Resetting fullWidth on nav click
     };
 
     return (
@@ -44,10 +38,10 @@ const RecentWork = () => {
                 <hr />
                 <Nav setWorkItem={setWorkItem} onClick={handleNavClick} />
                 <div className="workGrid">
-                    {workStuff.filter(tag => tag.Tags.includes(workItem)).map((filtered, index) => (
+                    {filterWorkItems().map((filtered, index) => (
                         <Link key={filtered.Key} href={`/${filtered.Slug}`} passHref>
                             <div
-                                className={`workItem ${(index === 0) ? `largeImage` : fullWidth}`}
+                                className={`workItem ${index === 0 ? 'largeImage' : fullWidth}`}
                                 style={{ backgroundImage: `url(${(fullWidth === "largeImage" && !isMobile) || (index === 0 && !isMobile) ? filtered.HomePhotoLarge : filtered.HomePhoto})` }}
                             >
                                 <div className="overlay">

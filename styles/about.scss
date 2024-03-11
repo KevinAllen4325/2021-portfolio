@@ -1,5 +1,5 @@
-.aboutMe{
-    p{
+.aboutMe {
+    p {
         color: $mediumGrey;
         margin: 0 auto 30px;
         line-height: 30px;
@@ -9,31 +9,32 @@
         text-align: center;
         max-width: 750px;
     }
-    .aboutGrid{
-        display:flex;
+    
+    .aboutGrid {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 60px;
-        .gridItem{
+        
+        .gridItem {
             margin: 5px;
             width: 260px;
-            text-align:center;
-            vertical-align: top;
+            text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            span {
-                width: 102px;
-                img {
-                    object-fit: contain;
-                }
+            
+            img {
+                object-fit: contain;
+                height: 102px;
             }
+            
             h3 {
                 line-height: 1;
             }
             
-            p{
+            p {
                 font-size: 15px;
                 margin: 20px auto;
                 color: $mediumGrey;
@@ -42,10 +43,12 @@
                 font-weight: 300;
                 width: 100%;
             }
-            &:first-of-type{
-                margin-left:0;
+            
+            &:first-of-type {
+                margin-left: 0;
             }
-            &:last-of-type{
+            
+            &:last-of-type {
                 margin-right: 0;
             }
         }

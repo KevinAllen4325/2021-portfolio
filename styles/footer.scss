@@ -1,23 +1,28 @@
-footer{
+footer {
     padding: 35px 0;
     background: $black;
-    .container{
-        text-align:center;
-        .quickNav{
+    
+    .container {
+        text-align: center;
+        
+        .quickNav {
             margin-top: 26px;
-            a{
+            
+            a {
                 line-height: 46px;
                 padding: 10px;
                 font-size: 13px;
                 color: #a4a4a4;
                 letter-spacing: .05em;
-                @include transition(all, .3s);
-                &:hover{
+                transition: all 0.3s; // Combine with existing transition
+                
+                &:hover {
                     color: $blue;
                 }
             }
         }
-        p{
+        
+        p {
             width: 100%;
             position: relative;
             font-weight: 300;

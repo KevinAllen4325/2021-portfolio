@@ -37,6 +37,8 @@ const Contact = () => {
                     src={City}
                     alt="City outline graphic"
                     loading="eager"
+                    width="auto"
+                    height="auto"
                 />
             </div>
         </div>

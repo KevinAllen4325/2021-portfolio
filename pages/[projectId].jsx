@@ -16,11 +16,10 @@ const Project = () => {
 
     const memoizedProjectsData = useMemo(() => projectsData, []); // Memoize projectsData
 
-    if (!projectId || !whiteList.includes(projectId)) {
-        return <Error />;
-    }
-
     const project = useMemo(() => {
+        if (!projectId || !whiteList.includes(projectId)) {
+            return null;
+        }
         return memoizedProjectsData.find(p => p.Slug.includes(projectId));
     }, [memoizedProjectsData, projectId]);
 
